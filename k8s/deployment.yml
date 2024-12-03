@@ -21,7 +21,7 @@ spec:
         command: ['sh', '-c', 'until nc -z mysql-0.mysql-headless 3306; do echo waiting for mysql; sleep 5; done;']
       containers:
       - name: bankapp
-        image: trainwithshubham/springboot-bankapp:latest
+        image: chetan0103/springboot-bankapp:latest
         ports:
         - containerPort: 8080
         env:
